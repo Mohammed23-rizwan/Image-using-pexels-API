@@ -28,12 +28,13 @@ const Home = () => {
   };
 
   useEffect(() => {
+    document.title = `Photos - ${data}`;
     output(data);
   }, [data]);
 
   return (
     <div className=" w-full min-h-screen grid place-items-center my-[55px]">
-      <div className=" w-[90%] min-h-[90%] bg-[#fff] rounded-[5px] shadow-[-6px_18px_13px_35px_#fff5f5] px-4 border border-black">
+      <div className=" w-[90%] min-h-[90%] bg-[#fff] rounded-[5px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] px-4 border">
         <div className="serach w-full m-[25px] flex justify-center">
           <input
             type="text"
@@ -52,7 +53,7 @@ const Home = () => {
             Search
           </button>
         </div>
-        <MenuList />
+        <MenuList setData={setData} />
         <DisplayItem fiData={fiData} />
       </div>
     </div>
