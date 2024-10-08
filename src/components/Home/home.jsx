@@ -35,7 +35,7 @@ const Home = () => {
   return (
     <div className=" w-full min-h-screen grid place-items-center my-[55px]">
       <div className=" w-[90%] min-h-[90%] bg-[#fff] rounded-[5px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] px-4 border">
-        <div className="serach w-full m-[25px] flex justify-center">
+        <div className="serach w-full m-[25px] flex md:justify-center">
           <input
             type="text"
             ref={inputRef}
