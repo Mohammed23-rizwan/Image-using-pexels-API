@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { useEffect, useRef } from "react";
-import Home from "./components/home/home";
+import Home from "./components/Home/home";
 
 const App = () => {
   // const [data, setdata] = useState();
