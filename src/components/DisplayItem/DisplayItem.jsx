@@ -5,7 +5,7 @@ const DisplayItem = ({ fiData }) => {
   const data = "Please Enter a Valid Title";
   useEffect(() => {}, [fiData]);
   return (
-    <div className="grid grid-cols-5 place-items-center gap-3 mb-4">
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 place-items-center gap-3 mb-4">
       {/* {if(fidata ==0){return <h6></h6>}} */}
       {fiData == 0 ? (
         <h6 className="text-center text-lg"> {data}</h6>
